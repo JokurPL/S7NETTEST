@@ -44,7 +44,7 @@ private void connectBtn_Click(object sender, EventArgs e)
         }
 ```
 ```c#
-// Handler kliknięcia przycisku (pierwszego)
+// Handler kliknięcia przycisku (pierwszego - ustawienie M0.0 na 1)
 private void onVar1_Click(object sender, EventArgs e)
         {
             try
@@ -63,8 +63,8 @@ private void onVar1_Click(object sender, EventArgs e)
                 MessageBox.Show(this, err.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error); // Wyświetlenie wyjątku
             }
         }
-
-        private void offVar1_Click(object sender, EventArgs e)
+// Handler kliknięcia przycisku (drugiego - ustawienie M0.0 na 0)
+private void offVar1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -83,6 +83,7 @@ private void onVar1_Click(object sender, EventArgs e)
                 MessageBox.Show(this, err.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error); // Wyświetlenie wyjątku
             }
         }
+// Reszta handlerów różni się tylko adresami.
 ```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
